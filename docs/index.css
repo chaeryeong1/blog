@@ -1,0 +1,520 @@
+
+/*커스텀 라이브러리*/
+
+*{
+    padding:0;
+    margin:0;
+  }
+  
+  .con{
+    width:1920px;
+    margin:0 auto;
+  }
+  
+  @media ( min-width: 1900px ) {
+    body { overflow-x:hidden; }
+  }
+  
+  /* -------------------visual */
+  
+  .box-1{
+    position:relative;
+    height:764px;
+     background-image:url("https://cdn.jsdelivr.net/gh/chaeryeong1/nanda/Group 402 (2).png");
+    z-index:-1;
+  }
+  .visual{
+    overflow:hidden;
+    height:930px;
+  }
+  .visual_box{
+    overflow:hidden;
+    height:764px;
+  }
+  .icon{
+    top:600px;
+  }
+  /*목업 메인 이미지*/
+  .w-362{
+    width:362px;
+  }
+  .mockup-2>img{
+    right:445px;
+  }
+  /*목업 애니메이션*/
+  
+  .mockup-1>img{
+   transform:translateY(-50);
+    transition:all 1s;
+    z-index:-2;
+      overflow:hidden;
+    padding-top:2200px;
+  }
+  
+  .mockup-1>img.animated{
+    transform:translateY(-70.5%);
+  }
+  .mockup-2{
+    right:600px;
+  }
+  .w-460{
+    width:460px;
+  }
+  .mockup-3{
+   transform:translateY(0);
+    transition:all 1s;
+  right:100px;
+   bottom:640px;
+  }
+  .mockup-3.animated{
+    transform:translateY(69%);
+   
+  }
+  
+  /*  -----------------------------------------------------------------------------------------Introduction */
+  
+  .h_145{
+    height:145px;
+  }
+  
+  .Introduction_box-1{
+    height:999px;
+     background-image:url("https://cdn.jsdelivr.net/gh/chaeryeong1/nanda/챕터2.png");
+    
+    
+  }
+  .w-158{
+    width:158px;
+  }
+  .n_logo_{
+    left:552px;
+    bottom:10px;
+    animation:ani 2s infinite alternate;  
+     }
+  @keyframes ani{
+     0%{transform:translate(0);}
+     100%{transform:translate(0px,50px);}
+  }
+  .h-50{
+  height:50px;
+  }
+  
+
+  
+  .one_3{
+  right:360px;
+  }
+  .one_1{
+  left:160px;
+    bottom:0px;
+    top:-60px;
+  }
+  .one_2{
+  right:0px;
+  }
+  
+  
+  
+  /* -------------------Persona */
+  .Persona{
+    position:relative;
+  }
+  
+  .Persona-bg{
+    background:url(https://raw.githubusercontent.com/seoungmohwa/nanda/main/nanda/bg/%ED%8E%98%EB%A5%B4%EC%86%8C%EB%82%98.png);
+    width:1920px;
+    height:930px;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:auto 100%;  
+  }
+  
+  .Persona-card{
+    position:absolute;
+    top:190px;
+    left:275px;
+  }
+  
+  /* -------------------Brand */
+  .Brand{
+    position:relative;
+  }
+  
+  .Brand-bg{
+    background:url(https://raw.githubusercontent.com/seoungmohwa/nanda/main/nanda/bg/%EB%A1%9C%EA%B3%A0%20%EC%86%8C%EA%B0%9C.png);
+    width:1920px;
+    height:1049px;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:auto 100%;  
+  }
+  /* ----------Identity-- */
+  .Identity-card{
+    position:absolute;
+    top:43px;
+    left:300px;
+  }
+  /* ----------color-- */
+  .color-card{
+    position:absolute;
+    top:524px;
+    left:300px;
+  }
+  /* ----------Typography-- */
+  .Typography-card{
+    position:absolute;
+    top:524px;
+    right:254px;
+  }
+  /* -------------------Character & Chart */
+  
+  .Character_Chart{
+    position:relative;
+  }
+  
+  .Chart_bg{
+    background:url(https://raw.githubusercontent.com/seoungmohwa/nanda/main/nanda/bg/%EC%BA%90%EB%A6%AD%ED%84%B0%20%EC%86%8C%EA%B0%9C%20~%20%EA%B5%AC%EC%84%B1%EB%8F%84.png);
+    width:1920px;
+    height:1952px;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:auto 100%;  
+  }
+  
+  .Character-card{
+    position:absolute;
+    top:84px;
+    left:300px;
+  }
+  
+  /* -------------------와이어프레임 */
+  
+  .con-1{
+  
+    overflow:hidden;
+    position:relative;
+  }
+  
+  .con-1::before{
+    position:absolute;
+    content:"";
+    background-color:#C4C4C4;
+    height:350px;
+    width:100%;
+    position:absolute;
+    top:150px;
+    z-index:-100;
+    overflow:hidden;
+  }
+  
+  .wire-frame-menu > .title{
+    margin-left:300px;
+  }
+  
+  .wire-frame-menu > .infinite_animation{
+    animation-name: infinite ;
+    animation-duration:  30s;
+    animation-iteration-count: infinite ;
+    animation-timing-function: linear ; 
+  }
+  
+  
+  @keyframes infinite{
+    0%{
+      transform: translateX(0) ;
+    }
+    100%{
+      transform: translateX(-100%);    
+    }
+    
+  }
+  
+  /* --------------------------info-----*/
+  
+  
+  .info-bg{  background:url(https://raw.githubusercontent.com/seoungmohwa/nanda/main/nanda/bg/%EC%A0%95%EB%B3%B4%EC%9E%85%EB%A0%A5%ED%95%98%EA%B8%B0%20-%203.png);
+   width:1920px;
+   height:929px;
+   background-repeat:no-repeat;
+   background-position:center;
+   background-size:auto 100%;
+   position:relative;
+  }
+  
+  /* --------------- ----정보입력 01-----*/
+  
+  .info-main-bg{  background:url(https://raw.githubusercontent.com/seoungmohwa/nanda/main/nanda/bg/%EC%A0%95%EB%B3%B4%EC%9E%85%EB%A0%A5%ED%95%98%EA%B8%B0%20-%204.png);
+   width:1920px;
+   height:2744px;
+   background-repeat:no-repeat;
+   background-position:center;
+   background-size:auto 100%;
+   position:relative;
+   }
+  
+  .info-main{
+    position:relative;
+  }
+  
+  .info-main-card-01{
+    position:absolute;
+    top:351px;
+    left:57px;
+  }
+  
+  .info-main-card-02{
+    position:absolute;
+    top:1531px;
+    left:178px;
+  }
+  
+  
+  /* --------------------------홈화면-----*/
+  .con {
+    width: 1920px;
+    margin: 0 auto;
+  }
+  
+  .home-menu {
+    padding-top: 108px;
+    padding-bottom: 379px;
+    position: relative;
+  }
+  
+  .home-menu__bg {
+    z-index: -200;
+    position: relative;
+  }
+  
+  .main_menu {
+    position: absolute;
+    top: 0;
+  }
+
+  .main_menu__vertical_video {
+    margin-top: 374px;
+    position: relative;
+    margin-left: 336px;
+    margin-right: 240px;
+  }
+  
+  .main_menu__vertical_video > .video > video {
+    position: absolute;
+    top: 2%;
+    left: 40px;
+    height: 940px;
+    z-index: -100;
+  }
+  
+  .main_menu__horizontal_video {
+    position: relative;
+    margin-top: 579px;
+  }
+  
+  .main_menu__horizontal_video > .video > video {
+    position: absolute;
+    top: 2%;
+    height: 930px;
+    left: 40px;
+    z-index: -100;
+  }
+  
+  /* -----------------------------------------my_men 동영상 */
+  .my_menu_box {
+    position: absolute;
+    top: 1858px;
+    margin-left: 1133px;
+  }
+  
+  .my-menu-video {
+    position: absolute;
+    top: 20px;
+    left: 27px;
+    width: 441px;
+    height: 920px;
+  }
+  
+  /* -----------------------------------------환경설정 동영상 */
+  .setting_box {
+    position: absolute;
+    top: 2715px;
+    margin-left: 339px;
+  }
+  
+  .frame {
+    position: relative;
+  }
+  
+  .my_menu_box {
+    position: absolute;
+  }
+  
+  .my-menu-video {
+    position: absolute;
+    top: 18px;
+    left: 28px;
+    width: 441px;
+    height: 932px;
+  }
+  
+  .home-menu__weight_record {
+    position: absolute;
+    top: 3732px;
+    margin-left: 1197px;
+  }
+  
+  .home-menu__month_all {
+    margin-left: 233px;
+    top: 4120px;
+    position: absolute;
+  }
+  
+  
+  
+  /* -----------------------------------------my_men 동영상 */
+  .my_menu_box{
+    position:absolute;
+    top:1858px;
+    margin-left:1133px;
+  }
+  
+  .my-menu-video{
+   position:absolute;
+   top:20px;
+   left:27px;               
+   width:441px;
+   height:920px;
+  }
+  
+  
+  
+  /* -----------------------------------------환경설정 동영상 */
+  .setting_box{
+    position:absolute;
+     top:2715px;
+   margin-left:339px;
+  }
+  
+  .frame{
+    position:relative;
+  }
+  
+  .my_menu_box{
+    position:absolute;  
+  }
+  
+  .my-menu-video{
+   position:absolute;
+   top:18px;
+   left:28px;               
+   width:441px;
+   height:932px;
+  }
+  
+  .home-menu__weight_record{
+    position:absolute;
+    top:3732px;
+    margin-left:1197px;
+  }
+  
+  .home-menu__month_all
+  {
+    margin-left:233px;
+    top:4120px;
+    position:absolute;
+  }
+  
+  
+  
+  /* --------------------------오늘의일기-----*/
+  .diary > .mokup > .mokup-2{
+    margin-top:20rem;
+    position:absolute;
+    width:960px;
+  }
+  
+  .diary > .mokup > .mokup-r{
+    margin-left:960px;
+    padding-left:10px;
+  }
+  
+  .diary > .mokup > .mokup-2 > video{
+    position:absolute;
+    top:14px;
+    left:271px;
+    height:90%;
+  }
+  
+  .diary > .mokup > .mokup-r > video{
+    left:273px;
+  }
+  
+  .diary > .mokup > .mokup-2 > img{
+    width:503px;
+    height:922px;
+    margin:0 auto;
+    z-index:100;
+    position:relative;
+  }
+  
+  /* --------------------------알람기능-----*/
+  
+  .notice-video{
+    position:relative;
+    margin-top:80px;
+  }
+  
+  .notice-video > .video{
+    position:absolute;
+    width:474px;
+    height:930px;
+    top:30px;
+    left:15px;
+    z-index:-100;
+  }
+  
+  
+  /* --------------------------마지막-----*/
+  
+  .finally_page{
+    background-color:#FBF4E0;
+  }
+  
+  .finally_page > span > img{
+    transform:translatey(5%);
+    opacity:0;
+    transition:all 1s;
+  }
+  
+  .finally_page > span.animated >img{
+     transform:translatey(0);
+     opacity:1;
+  } 
+  
+  
+  .finally_page > .icon_img .infinite_animation{
+    animation-name: infinite-01 ;
+    animation-duration: 0.9s;
+    animation-iteration-count: infinite ;
+    animation-timing-function: linear ; 
+  }
+  .finally_bg{
+    height:100px;
+    color:#F7F5EF;
+  }
+  
+  @keyframes infinite-01{
+    0%{
+      transform: translatey(0) ;
+    }
+    
+    50%{
+      transform: translatey(-10%);    
+    }
+    
+    100%{
+      transform: translatey(0);    
+    }
+    
+  }
+  
