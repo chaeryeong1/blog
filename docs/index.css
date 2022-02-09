@@ -120,6 +120,7 @@ right:60px;
 .Introduction{
   height:1140px;
   background-color:#FFFDF1;
+  padding-bottom: 100px;
 }
 .Intro-img-list-1{
   top:535px;
@@ -197,13 +198,15 @@ right:0px;
 
 /* -------------------Persona */
 .Persona{
-  height:2020px;
+  height:2400px;
+
+ 
 }
 .Persona-1{
   z-index:-1;
 }
 .Persona-2{
-  top:68px;
+  top:0px;
   left:144px;
   
 }
@@ -238,38 +241,38 @@ right:0px;
 }
 .Persona-10{
   top:965px;
-  left:915px;
+  left:925px;
 }
 .Persona-11{
   top:1113px;
-  left:1019px;
+  left:1037px;
 }
 .Persona-12{
   top:476px;
   left:1319px;
 }
 .Persona-13{
-  top:210px;
+  top:200px;
   left:369px;
 }
 .Persona-14{
-  top:1527px;
+  top:1727px;
   left:300px;
 }
 .Persona-15{
-  top:1611px;
+  top:1811px;
   left:300px;
 }
 .Persona-16{
-  top:1723px;
+  top:1923px;
   left:271px;
 }
 .Persona-17{
-  top:1723px;
+  top:1923px;
   left:724px;
 }
 .Persona-18{
-  top:1723px;
+  top:1923px;
   left:1236px;
 }
 
