@@ -1,5 +1,16 @@
 
 /*커스텀 라이브러리*/
+.loading {
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background-color:white;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
 
 *{
   padding:0;
@@ -14,19 +25,48 @@
 @media ( min-width: 1900px ) {
   body { overflow-x:hidden; }
 }
+/*뜨는애니메이션 라이브러리*/
+
+.home-icon-1,.home-icon-2,.home-icon-3,.home-icon-4{
+  animation-name: infinite-01 ;
+  animation-duration: 0.9s;
+  animation-iteration-count: infinite ;
+  animation-timing-function: linear ; 
+}
+.finally_bg{
+  height:100px;
+  color:#F7F5EF;
+}
+
+@keyframes infinite-01{
+  0%{
+    transform: translatey(0) ;
+  }
+  
+  50%{
+    transform: translatey(-10%);    
+  }
+  
+  100%{
+    transform: translatey(0);    
+  }
+  
+}
+
 
 /* -------------------visual */
 
 .box-1{
   position:relative;
-  height:764px;
-   background-image:url("https://cdn.jsdelivr.net/gh/chaeryeong1/nanda/Group 402 (2).png");
-  z-index:-1;
+  height:763px;
+   background-image:url("");
+ 
 }
 .visual{
   overflow:hidden;
-  height:930px;
+  height:960px;
 }
+
 .visual_box{
   overflow:hidden;
   height:764px;
@@ -40,11 +80,11 @@
 .w-362{
   width:362px;
 }
-.mockup-2>img{
-  right:445px;
-}
-/*목업 애니메이션*/
 
+/*목업 애니메이션*/
+.mockup-1{
+  left:320px;
+}
 .mockup-1>img{
  transform:translateY(-50);
   transition:all 1s;
@@ -57,7 +97,9 @@
   transform:translateY(-70.5%);
 }
 .mockup-2{
-  right:600px;
+
+  right:560px;
+  z-index:3;
 }
 .w-460{
   width:460px;
@@ -65,7 +107,7 @@
 .mockup-3{
  transform:translateY(0);
   transition:all 1s;
-right:100px;
+right:60px;
  bottom:640px;
 }
 .mockup-3.animated{
@@ -73,15 +115,47 @@ right:100px;
  
 }
 
-/*  -----------------------------------------------------------------------------------------Introduction */
 
+/*  -----------------------------------------------------------------------------------------Introduction */
+.Introduction{
+  height:1140px;
+  background-color:#FFFDF1;
+}
+.Intro-img-list-1{
+  top:535px;
+}
+.Intro-img-list-2{
+  top:702px;
+  left:448px;
+}
+.Intro-img-list-3{
+  top:-80px;
+  left:946px;
+}
+.Intro-img-list-4{
+  top:379px;
+  left:1364.82px;
+  animation:pen 2s ease-in Alternate Infinite;
+}
+@keyframes pen{
+ 0% {
+    left:1364.82px;
+  }
+  100% {
+    left: 1400px;
+  }
+}
+.In-bg_1{
+  background-color:#FFFADE;
+  z-index:-5;
+}
 .h_145{
   height:145px;
 }
 
 .Introduction_box-1{
   height:999px;
-   background-image:url("https://cdn.jsdelivr.net/gh/chaeryeong1/nanda/챕터2.png");
+   background-image:url("https://cdn.jsdelivr.net/gh/chaeryeong1/nanda/bg-인포.png");
   
   
 }
@@ -90,8 +164,8 @@ right:100px;
 }
 .n_logo_{
   left:552px;
-  bottom:10px;
-  animation:ani 2s infinite alternate;  
+  bottom:50px;
+  animation:ani 1s ease-in Infinite Alternate;  
    }
 @keyframes ani{
    0%{transform:translate(0);}
@@ -100,7 +174,14 @@ right:100px;
 .h-50{
 height:50px;
 }
-
+.h-40{
+  height:40px;
+  width:auto;
+}
+.Introduction_box-2{
+ height:550px; 
+  z-index:1;
+}
 
 .one_3{
 right:360px;
@@ -114,27 +195,84 @@ left:160px;
 right:0px;
 }
 
-
-
 /* -------------------Persona */
 .Persona{
-  position:relative;
+  height:2020px;
+}
+.Persona-1{
+  z-index:-1;
+}
+.Persona-2{
+  top:68px;
+  left:144px;
+  
+}
+.Persona-3{
+  top:567px;
+  left:527px;
+  
+}
+.Persona-4{
+  top:885px;
+  left:567px;
+}
+.Persona-5{
+  top:482px;
+  left:319px;
+}
+.Persona-6{
+  top:965px;
+  left:343px;
+}
+.Persona-7{
+  top:1086px;
+  left:447px;
+}
+.Persona-8{
+  top:567px;
+  left:1099px;
+}
+.Persona-9{
+  top:885px;
+  left:1107px;
+}
+.Persona-10{
+  top:965px;
+  left:915px;
+}
+.Persona-11{
+  top:1113px;
+  left:1019px;
+}
+.Persona-12{
+  top:476px;
+  left:1319px;
+}
+.Persona-13{
+  top:210px;
+  left:369px;
+}
+.Persona-14{
+  top:1527px;
+  left:300px;
+}
+.Persona-15{
+  top:1611px;
+  left:300px;
+}
+.Persona-16{
+  top:1723px;
+  left:271px;
+}
+.Persona-17{
+  top:1723px;
+  left:724px;
+}
+.Persona-18{
+  top:1723px;
+  left:1236px;
 }
 
-.Persona-bg{
-  background:url(https://raw.githubusercontent.com/seoungmohwa/nanda/main/nanda/bg/%ED%8E%98%EB%A5%B4%EC%86%8C%EB%82%98.png);
-  width:1920px;
-  height:930px;
-  background-repeat:no-repeat;
-  background-position:center;
-  background-size:auto 100%;  
-}
-
-.Persona-card{
-  position:absolute;
-  top:190px;
-  left:275px;
-}
 
 /* -------------------Brand */
 .Brand{
@@ -167,16 +305,18 @@ right:0px;
   top:524px;
   right:254px;
 }
-/* -------------------Character & Chart */
+/* -------------------Character*/
 
 .Character_Chart{
   position:relative;
 }
-
+.chart_bg_1_1{
+  left:300px;
+}
 .Chart_bg{
-  background:url(https://raw.githubusercontent.com/seoungmohwa/nanda/main/nanda/bg/%EC%BA%90%EB%A6%AD%ED%84%B0%20%EC%86%8C%EA%B0%9C%20~%20%EA%B5%AC%EC%84%B1%EB%8F%84.png);
+
   width:1920px;
-  height:1952px;
+  height:800px;
   background-repeat:no-repeat;
   background-position:center;
   background-size:auto 100%;  
@@ -188,57 +328,144 @@ right:0px;
   left:300px;
 }
 
-/* -------------------와이어프레임 */
-
-.con-1{
-
-  overflow:hidden;
-  position:relative;
+/*infobg*/
+.info-bg-1-1{
+  height:1780px;
+  width:1920px;
+}
+.info-bg_2{
+  left:1395px;
+  top:348px;
+}
+.info-bg_3{
+  left:310px;
+  top:811px;
+}
+.info-bg_4{
+  left:379px;
+  top:872px;
 }
 
-.con-1::before{
-  position:absolute;
-  content:"";
-  background-color:#C4C4C4;
-  height:350px;
-  width:100%;
-  position:absolute;
-  top:150px;
-  z-index:-100;
-  overflow:hidden;
-}
 
-
-
-.wire-frame-menu > .infinite_animation{
-  animation-name: infinite ;
-  animation-duration:  30s;
+.info-bg_2{
+  animation-name: infinite-01 ;
+  animation-duration: 0.9s;
   animation-iteration-count: infinite ;
   animation-timing-function: linear ; 
 }
+.finally_bg{
+  height:100px;
+  color:#F7F5EF;
+}
 
-
-@keyframes infinite{
+@keyframes infinite-01{
   0%{
-    transform: translateX(0) ;
-  }
-  100%{
-    transform: translateX(-100%);    
+    transform: translatey(0) ;
   }
   
+  50%{
+    transform: translatey(-10%);    
+  }
+  
+  100%{
+    transform: translatey(0);    
+  }
+  
+}
+
+/*layout*/
+.layout{
+  height:2744px;
+  width:1920px;
+}
+.lay-1{
+left:610px;
+  top:171px;
+}
+.lay-2{
+  top:207px;
+}
+
+/*chart*/
+
+.chart{
+  width:1920px;
+  height:1480px;
+  background-color:#FFC500;
+}
+.chart-1-img{
+  left:196px;
+  top:322px;
+}
+.chart-2-img{
+  left:468px;
+  top:400px;
+}
+.chart-3-img{
+  left:867px;
+  top:222px;
+}
+.chart-4-img{
+  left:666px;
+  top:271px;
+}
+
+/* -------------------wire-frame */
+.wire-b-100{
+  height:120px;
+  width:auto;
+}
+.wire-frame{
+  padding-top:125px;
+  overflow-x:hidden;
+}
+.wire-frame>.title{
+  left:300px;
+  top:75px;
+}
+.wire-frame-img_list span img{
+   min-width:428px;
+  height:800px;
+}
+
+.wire-frame-bg{
+  background-color:#C4C4C4;
+  width:1620px;
+  height:600px;
+  left:300px;
+  top:260px;
+  z-index:-2;
+}
+.wire-frame-img_list{
+ animation-name:wire-infinite;
+  animation-iteration-count:infinite;
+  animation-duration:60s;
+  animation-timing-function: linear ;
+}
+
+
+@keyframes wire-infinite{
+  0%{
+    transform:translateX(0);
+  }
+  100%{
+    transform:translateX(-300%);
+  }
+ 
 }
 
 /* --------------------------info-----*/
 
 
 .info-bg{ 
+margin-bottom:220px;
  width:1920px;
  height:929px;
 background-color:inherit;
 }
-ifbg-1{
-  top:50px;
-  left:700px;
+
+.ifbg-2{
+  top:150px;
 }
 /* --------------- ----정보입력 01-----*/
 
@@ -267,34 +494,49 @@ ifbg-1{
   left:178px;
 }
 
-
 /* --------------------------홈화면-----*/
 .con {
   width: 1920px;
   margin: 0 auto;
 }
 /*타이틀 애니메이션*/
+.home-icon-1{
+  top:1510px;
+  left:520px;
+}
+.home-icon-2{
+  top:2470px;
+  left:1130px;
+}
+.home-icon-3{
+  top:2957px;
+  left:500px;
+}
+.home-icon-4{
+  top:3760px;
+  left:890px;
+}
 .home-title-1{
   left:626px;
 }
 .home-title-2{
   top:1700px;
-  left:700px;
+  left:780px;
 }
 .home-title-3{
-  top:2900px;
+  top:2650px;
   left:896px;
 }
 .home-title-4{
-  top:3600px;
+  top:3134px;
   left:830px;
 }
 .home-title-5{
-  top:4600px;
+  top:4073px;
   left:830px;
 }
 .home-menu-rel{
-height:5070px;
+height:4400px;
   overflow-y:hidden;
 }
 .home-menu {
@@ -345,7 +587,7 @@ height:5070px;
 /* -----------------------------------------my_men 동영상 */
 .my_menu_box {
   position: absolute;
-  top:1200px;
+  top:869px;
  left:1100px;
 }
 
@@ -360,7 +602,7 @@ height:5070px;
 /* -----------------------------------------환경설정 동영상 */
 .setting_box {
   position: absolute;
-  top: 1600px;
+  top: 1400px;
   margin-left: 339px;
 }
 
@@ -380,22 +622,21 @@ height:5070px;
 
 .home-menu__weight_record {
   position: absolute;
-  top: 3200px;
+  top: 2800px;
   margin-left: 1197px;
 }
 
 .home-menu__month_all {
   margin-left: 233px;
-  top: 3820px;
+  top: 3300px;
   position: absolute;
 }
 
 .dtc-1{
-  top:2500px;
+  top:2230px;
   left:687px;
   z-index:1;
 }
-
 
 /* --------------------------오늘의일기-----*/
 .diary > .mokup > .mokup-2{
@@ -447,7 +688,7 @@ height:5070px;
   left:1174px;
 }
 .almg-3{
-   top:337px;
+   top:300px;
   left:1251px;
 }
 /* -------------------kcal */
