@@ -334,8 +334,9 @@ right:0px;
   width:1920px;
 }
 .info-bg_2{
-  left:1395px;
-  top:348px;
+  left:960px;
+  top:539px;
+  z-index: 1;
 }
 .info-bg_3{
   left:310px;
