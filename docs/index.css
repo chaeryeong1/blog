@@ -27,9 +27,9 @@
 }
 /*뜨는애니메이션 라이브러리*/
 
-.home-icon-1,.home-icon-2,.home-icon-3,.home-icon-4{
+.home-icon-1,.home-icon-2,.home-icon-3,.home-icon-4,.Intro-img-list-3{
   animation-name: infinite-01 ;
-  animation-duration: 0.9s;
+  animation-duration: 1.6s;
   animation-iteration-count: infinite ;
   animation-timing-function: linear ; 
 }
@@ -123,27 +123,29 @@ right:60px;
   padding-bottom: 100px;
 }
 .Intro-img-list-1{
-  top:535px;
+  top:906.17px;
+  left:1564.19px;
 }
 .Intro-img-list-2{
   top:702px;
   left:448px;
 }
 .Intro-img-list-3{
-  top:-80px;
-  left:946px;
+  top:525px;
+  left:1469px;
+  z-index: 2;
 }
 .Intro-img-list-4{
-  top:379px;
-  left:1364.82px;
-  animation:pen 2s ease-in Alternate Infinite;
+  top:279px;
+  left:-67px;
+  animation:pen 1.3s ease-in Alternate Infinite;
 }
 @keyframes pen{
  0% {
-    left:1364.82px;
+    left:-67px;
   }
   100% {
-    left: 1400px;
+    left: 0px;
   }
 }
 .In-bg_1{
@@ -164,9 +166,9 @@ right:60px;
   width:158px;
 }
 .n_logo_{
+  top: 0px;
   left:552px;
-  bottom:50px;
-  animation:ani 1s ease-in Infinite Alternate;  
+  bottom:50px; 
    }
 @keyframes ani{
    0%{transform:translate(0);}
@@ -395,7 +397,7 @@ left:610px;
 .chart{
   width:1920px;
   height:1480px;
-  background-color:#FFC500;
+
 }
 .chart-1-img{
   left:196px;
