@@ -25,6 +25,20 @@
 @media ( min-width: 1900px ) {
   body { overflow-x:hidden; }
 }
+
+/* 스크롤바 막대 설정*/
+
+body::-webkit-scrollbar { width: 7px; /*스크롤바의 너비*/} 
+
+body::-webkit-scrollbar-thumb { 
+  background-color: #FFC501; /*스크롤바의 색상*/ border-radius: 10px; /*스크롤바 라운드*/} 
+
+body::-webkit-scrollbar-track {
+  background-color: #FFF3CA; /*스크롤바 트랙 색상*/ 
+  border-radius: 10px; /*스크롤바 트랙 라운드*/
+  }
+
+  
 /*뜨는애니메이션 라이브러리*/
 
 .home-icon-1,.home-icon-2,.home-icon-3,.home-icon-4,.Intro-img-list-3{
